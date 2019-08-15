@@ -17,6 +17,8 @@ https://codesandbox.io/s/react-provider-context-hooks-usestate-5kgh2
 
 ## Secure Auth
 
+> Applies to /Manual and /OAuth components.
+
 A simple plan of avoiding both CSRF attacks and XSS attacks to steal sessions by combining the security of httpOnly cookies over HTTPS/TLS and a hashed token passed back by the client on every request.
 
 The idea is simple, the token can be stolen, but cannot be used unless the attacker also has the secret from the cookie. Likewise, the cookie cannot be used unless the hashed token is also sent.
